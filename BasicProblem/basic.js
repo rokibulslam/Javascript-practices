@@ -12,7 +12,7 @@ for (let i = 1; i <= 10; i++) {
   let row = "7 *" + i + "=" + 7 * i;
   console.log(row);
 }
-// Print all the multiplication tables with numbers from 1 to 10
+// Print all the multiplication tables # problem-solving with numbers from 1 to 10
 function printTable(n) {
   for (let i = 1; i <= 10; i++) {
     let row = n + "*" + i + "=" + n * i;
@@ -84,3 +84,18 @@ function average(array) {
 }
 const av = average([2, 3, 4, 5, 6]);
 console.log("average", av);
+
+// Create a function that receives an array of numbers and returns an array containing only the positive numbers
+
+function getPositive(array) {
+  let ar2 = [];
+  for (let i = 0; i < array.length; i++){
+    let elem = array[i]
+    if (elem >= 0) {
+      ar2.push(elem)
+    }
+  }return ar2
+}
+const arr = [-4, 3, 45, 54, 43]
+const positiveA = getPositive(arr);
+console.log(positiveA);
