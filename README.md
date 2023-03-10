@@ -37,3 +37,6 @@
 2. Classes(es6) sintactic sugar
 3. Object.create()
 ### Prototype
+
+
+
