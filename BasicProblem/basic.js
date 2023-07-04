@@ -94,8 +94,33 @@ function getPositive(array) {
     if (elem >= 0) {
       ar2.push(elem)
     }
-  }return ar2
+  }
+  return ar2
 }
 const arr = [-4, 3, 45, 54, 43]
 const positiveA = getPositive(arr);
 console.log(positiveA);
+
+// Reverse a string 1st Method
+
+function reverseString(str) {
+  return str.split('').reverse().join()
+}
+const reverseStr=reverseString("Rokibul")
+console.log(reverseStr)
+
+// Reverse a string 2nd Method
+function reverseString2(str) {
+  let reveresdStr = ''
+  for (let i = str.length-1; i >= 0; i--){
+    reveresdStr +=str[i]
+  }
+  return reveresdStr
+}
+const str = "Hello, World!"
+console.log(reverseString2("Rokibul"))
+
+// Palindrom Checker
+function palindrom(str) {
+  const reversed=str.split("").reverse()
+}
